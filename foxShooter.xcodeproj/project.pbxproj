@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4229550321EF657600DA3F91 /* fox.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 4229550221EF657600DA3F91 /* fox.atlas */; };
 		42397E9F22142A660071B3AA /* fox.png in Resources */ = {isa = PBXBuildFile; fileRef = 42397E9E22142A660071B3AA /* fox.png */; };
 		42397EA922142A880071B3AA /* balloon_explode.png in Resources */ = {isa = PBXBuildFile; fileRef = 42397EA022142A870071B3AA /* balloon_explode.png */; };
 		42397EAA22142A880071B3AA /* balloon5.png in Resources */ = {isa = PBXBuildFile; fileRef = 42397EA122142A870071B3AA /* balloon5.png */; };
@@ -18,6 +17,7 @@
 		42397EAF22142A880071B3AA /* balloon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42397EA622142A880071B3AA /* balloon2.png */; };
 		42397EB022142A880071B3AA /* cloudA.png in Resources */ = {isa = PBXBuildFile; fileRef = 42397EA722142A880071B3AA /* cloudA.png */; };
 		42397EB122142A880071B3AA /* balloon4.png in Resources */ = {isa = PBXBuildFile; fileRef = 42397EA822142A880071B3AA /* balloon4.png */; };
+		42397EB322142AFF0071B3AA /* fox.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 42397EB222142AFF0071B3AA /* fox.atlas */; };
 		424C180721EF54CA0055FAFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C180621EF54CA0055FAFC /* AppDelegate.swift */; };
 		424C180921EF54CA0055FAFC /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 424C180821EF54CA0055FAFC /* GameScene.sks */; };
 		424C180B21EF54CA0055FAFC /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 424C180A21EF54CA0055FAFC /* Actions.sks */; };
@@ -29,7 +29,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4229550221EF657600DA3F91 /* fox.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = fox.atlas; path = ../../Hemuppgift/fox.atlas; sourceTree = "<group>"; };
 		42397E9E22142A660071B3AA /* fox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fox.png; sourceTree = "<group>"; };
 		42397EA022142A870071B3AA /* balloon_explode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon_explode.png; sourceTree = "<group>"; };
 		42397EA122142A870071B3AA /* balloon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon5.png; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		42397EA622142A880071B3AA /* balloon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon2.png; sourceTree = "<group>"; };
 		42397EA722142A880071B3AA /* cloudA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloudA.png; sourceTree = "<group>"; };
 		42397EA822142A880071B3AA /* balloon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon4.png; sourceTree = "<group>"; };
+		42397EB222142AFF0071B3AA /* fox.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = fox.atlas; sourceTree = "<group>"; };
 		424C180321EF54CA0055FAFC /* foxShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = foxShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		424C180621EF54CA0055FAFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		424C180821EF54CA0055FAFC /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 				42397EA122142A870071B3AA /* balloon5.png */,
 				42397EA722142A880071B3AA /* cloudA.png */,
 				42397EA522142A880071B3AA /* cloudB.png */,
-				4229550221EF657600DA3F91 /* fox.atlas */,
+				42397EB222142AFF0071B3AA /* fox.atlas */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,13 +173,13 @@
 				424C180921EF54CA0055FAFC /* GameScene.sks in Resources */,
 				424C181421EF54CB0055FAFC /* Assets.xcassets in Resources */,
 				42397E9F22142A660071B3AA /* fox.png in Resources */,
+				42397EB322142AFF0071B3AA /* fox.atlas in Resources */,
 				42397EAA22142A880071B3AA /* balloon5.png in Resources */,
 				42397EB122142A880071B3AA /* balloon4.png in Resources */,
 				424C181721EF54CB0055FAFC /* LaunchScreen.storyboard in Resources */,
 				42397EA922142A880071B3AA /* balloon_explode.png in Resources */,
 				424C180B21EF54CA0055FAFC /* Actions.sks in Resources */,
 				42397EAF22142A880071B3AA /* balloon2.png in Resources */,
-				4229550321EF657600DA3F91 /* fox.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
