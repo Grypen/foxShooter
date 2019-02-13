@@ -50,6 +50,7 @@
 		424C181321EF54CB0055FAFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		424C181621EF54CB0055FAFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		424C181821EF54CB0055FAFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D13C6A2214391B00896294 /* bullet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bullet.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +69,7 @@
 			children = (
 				424C180521EF54CA0055FAFC /* foxShooter */,
 				424C180421EF54CA0055FAFC /* Products */,
+				D0D13C6A2214391B00896294 /* bullet.png */,
 				42397E9E22142A660071B3AA /* fox.png */,
 				42397EA222142A870071B3AA /* background.png */,
 				42397EA022142A870071B3AA /* balloon_explode.png */,
