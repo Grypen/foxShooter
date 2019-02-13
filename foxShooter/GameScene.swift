@@ -11,7 +11,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    var fox = SKSpriteNode()
+    var fox = SKSpriteNode(imageNamed: "fox.png")
     var foxRun: SKAction?
     
     override func didMove(to view: SKView) {
@@ -23,6 +23,12 @@ class GameScene: SKScene {
         foxRun = SKAction(named: "foxRun")
         fox.removeAllActions()
         
+    }
+    func SpawnDart(){
+        var Dart = SKSpriteNode(imageNamed: "bullet.png")
+        Dart.zPosition  = -5
+        Dart.position = 
+        self.addChild(Dart)
     }
     
     func runFox(_ touches: Set<UITouch>){
@@ -86,7 +92,7 @@ class GameScene: SKScene {
         // Called before each frame is rendered
     }
     
-    /*func buildBalloon1(_ touches: Set<UITouch>){
+    func buildBalloon1(_ touches: Set<UITouch>){
         if let touch
-    }*/
+    }
 }
