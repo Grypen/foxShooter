@@ -9,6 +9,11 @@
 import SpriteKit
 import GameplayKit
 
+struct PhysicsCategory {
+    static let Balloon : UInt32 = 1
+    static let Dart : UInt32 = 2
+}
+
 class GameScene: SKScene {
     
     var fox = SKSpriteNode(imageNamed: "fox.png")
@@ -25,10 +30,22 @@ class GameScene: SKScene {
         
     }
     func SpawnDart(){
-        var Dart = SKSpriteNode(imageNamed: "bullet.png")
+        let Dart = SKSpriteNode(imageNamed: "bullet.png")
         Dart.zPosition  = -5
-        Dart.position = 
+        Dart.position = CGPoint(x:fox.position.x, y:fox.position.y)
+        let action = SKAction.moveTo(y: self.size.height + 50, duration: 0.6)
+        Dart.run(SKAction.repeatForever(action))
+        Dart.physicsBody = SKPhysicsBody(rectangleOf: Dart.size)
+        Dart.physicsBody?.categoryBitMask = PhysicsCategory.Dart
+        
         self.addChild(Dart)
+        
+    }
+    
+    func SpawnBalloons(){
+        
+        
+        
     }
     
     func runFox(_ touches: Set<UITouch>){
@@ -36,13 +53,13 @@ class GameScene: SKScene {
             let nodeLocation = fox.position
             let touchPoint = touch.location(in: view)
             let touchLocation = convertPoint(fromView: touchPoint)
-            
+
             if let foxAction = foxRun{
                 fox.run(foxAction)
             }
-            
+
             let a = touchLocation.x - nodeLocation.x
-            
+
             if a > 0 {
                 fox.xScale = -0.5
             } else {
@@ -50,7 +67,7 @@ class GameScene: SKScene {
             }
              let moveAction = SKAction.moveBy(x: a, y: 0, duration: 2)
              fox.run(moveAction)
-             
+
              fox.run(moveAction, completion: {()-> Void in
              self.fox.removeAllActions()
              self.fox.texture = SKTexture(imageNamed: "fox.png")
@@ -73,6 +90,7 @@ class GameScene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
        runFox(touches)
+        SpawnDart()
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -93,6 +111,6 @@ class GameScene: SKScene {
     }
     
     func buildBalloon1(_ touches: Set<UITouch>){
-        if let touch
+//        if let touch
     }
 }
