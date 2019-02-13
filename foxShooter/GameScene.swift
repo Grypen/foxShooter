@@ -42,7 +42,6 @@ class GameScene: SKScene {
             } else {
                 fox.xScale = 0.5
             }
-            /*
              let moveAction = SKAction.moveBy(x: a, y: 0, duration: 2)
              fox.run(moveAction)
              
@@ -50,8 +49,6 @@ class GameScene: SKScene {
              self.fox.removeAllActions()
              self.fox.texture = SKTexture(imageNamed: "fox.png")
              })
-             */
-            
         }
     }
     
@@ -88,4 +85,8 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
+    
+    /*func buildBalloon1(_ touches: Set<UITouch>){
+        if let touch
+    }*/
 }
